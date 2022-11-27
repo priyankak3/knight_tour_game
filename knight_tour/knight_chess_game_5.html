@@ -1,0 +1,72 @@
+<html>
+<head>
+ <title>Knight Chess Game</title>
+ <script src="knight_chess_game_script_5.js"></script>
+ <link rel="stylesheet" href="knight_chess_game_style.css"> <!-- This is an external CSS -->
+</head>
+
+<body id="bgcolor">
+    <h1 id="title">KNIGHT'S TOUR GAME</h1><hr>
+    <div  style="text-align:center">
+        <h2 class="h2">Select Chessboard Size</h2>
+        <a href="knight_chess_game_5.html"><span class="dot"></span> 5x5</a><br>
+        <a href="knight_chess_game_6.html"><span class="dot"></span> 6x6</a><br>
+        <a href="knight_chess_game.html"><span class="dot"></span> 8x8</a><br>
+    </div>
+    <hr>
+    <div>
+<table style="border-style:solid;">
+<tr>
+<td id = "elem00" onclick="SquareClicked('elem00')" style="background-color: black;" ></td>
+<td id = "elem01" onclick="SquareClicked('elem01')" style="background-color: white;"></td>
+<td id = "elem02" onclick="SquareClicked('elem02')" style="background-color: black;" ></td>
+<td id = "elem03" onclick="SquareClicked('elem03')" style="background-color: white;"></td>
+<td id = "elem04" onclick="SquareClicked('elem04')" style="background-color: black;" ></td>
+</tr>
+<tr>
+<td id = "elem10" onclick="SquareClicked('elem10')" style="background-color: white;"></td>
+<td id = "elem11" onclick="SquareClicked('elem11')" style="background-color: black;"></td>
+<td id = "elem12" onclick="SquareClicked('elem12')" style="background-color: white;"></td>
+<td id = "elem13" onclick="SquareClicked('elem13')" style="background-color: black;" ></td>
+<td id = "elem14" onclick="SquareClicked('elem14')" style="background-color: white;"></td>
+</tr>
+<tr>
+<td id = "elem20" onclick="SquareClicked('elem20')" style="background-color: black;" ></td>
+<td id = "elem21" onclick="SquareClicked('elem21')" style="background-color: white;"></td>
+<td id = "elem22" onclick="SquareClicked('elem22')" style="background-color: black;" ></td>
+<td id = "elem23" onclick="SquareClicked('elem23')" style="background-color: white;"></td>
+<td id = "elem24" onclick="SquareClicked('elem24')" style="background-color: black;" ></td>
+</tr>
+<tr>
+<td id = "elem30" onclick="SquareClicked('elem30')" style="background-color: white;"></td>
+<td id = "elem31" onclick="SquareClicked('elem31')" style="background-color: black;"></td>
+<td id = "elem32" onclick="SquareClicked('elem32')" style="background-color: white;"></td>
+<td id = "elem33" onclick="SquareClicked('elem33')" style="background-color: black;" ></td>
+<td id = "elem34" onclick="SquareClicked('elem34')" style="background-color: white;"></td>
+</tr>
+<tr>
+<td id = "elem40" onclick="SquareClicked('elem40')" style="background-color: black;" ></td>
+<td id = "elem41" onclick="SquareClicked('elem41')" style="background-color: white;"></td>
+<td id = "elem42" onclick="SquareClicked('elem42')" style="background-color: black;" ></td>
+<td id = "elem43" onclick="SquareClicked('elem43')" style="background-color: white;"></td>
+<td id = "elem44" onclick="SquareClicked('elem44')" style="background-color: black;" ></td>
+</tr>
+
+</table>
+</div>
+<div id="all_info">
+
+<h4 id="score">Score: </h4>
+<p id="game_Info"><b>Game Info:</b> The purpose of the game is to travel each individual Square on the Chessboard using only the Knight piece.
+You are allowed to travel each square only once. The game is won only when you successful conquer each square on the chessboard.
+If you run out of squares to travel, but failed to conquer the whole chessboard the game is over.
+<br><br>
+<b>Choose a square in order to begin.</b>
+</p>
+<h3 id="result"></h3>
+<input type="button" id="restart" onclick="gameRestart()" value="Restart"></input>
+
+</div>
+</body>
+
+</html>
